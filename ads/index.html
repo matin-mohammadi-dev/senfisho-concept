@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحه آگهی - کافه هنر</title>
-    <link rel="stylesheet" href="../style.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>نتایج جستجو - صنفیشو</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
@@ -19,58 +20,66 @@
     </header>
 
     <main>
-        <section class="ad-page">
-            <div class="ad-hero-banner" style="background-image: url('https://placehold.co/1200x400/2B6CB0/ffffff?text=Cafe+Honar+Banner');">
-                <div class="container">
-                    <h1>کافه هنر</h1>
-                </div>
-            </div>
-
+        <section class="listing-page">
             <div class="container">
-                <div class="ad-key-info">
-                    <div class="info-item"><i class="fa fa-map-marker-alt"></i> <span>آدرس: تهران، خیابان هنر، پلاک ۱۲۳</span></div>
-                    <div class="info-item"><i class="fa fa-phone"></i> <a href="tel:02112345678">۰۲۱-۱۲۳۴۵۶۷۸</a></div>
-                    <div class="info-item"><i class="fa fa-clock"></i> <span>ساعات کاری: شنبه تا جمعه - ۹ صبح تا ۱۱ شب</span></div>
-                    <div class="info-item"><i class="fa fa-globe"></i> <a href="http://www.cafehonar.com">www.cafehonar.com</a></div>
+                <div class="page-header">
+                    <h1>نتایج جستجو برای: <span class="search-term">"رستوران"</span></h1>
+                    <p>۳ نتیجه یافت شد</p>
                 </div>
 
-                <div class="ad-main-content">
-                    <div class="ad-details">
-                        <h2>درباره کافه هنر</h2>
-                        <p>کافه هنر، فضایی دنج و الهام‌بخش در قلب تهران است که با ترکیبی از هنر، فرهنگ و بهترین طعم‌های قهوه، لحظات بی‌نظیری را برای شما خلق می‌کند. ما به کیفیت مواد اولیه و طعم اصیل نوشیدنی‌ها اهمیت می‌دهیم و منوی متنوعی از قهوه‌های اسپشیال، چای‌های خاص و انواع کیک و شیرینی‌های تازه را ارائه می‌کنیم. اینجا مکانی عالی برای مطالعه، کار، قرارهای دوستانه و لذت بردن از فضای آرام هنری است. با سرویس‌دهی گرم و صمیمی، منتظر حضور گرمتان هستیم.</p>
-                        
-                        <h3>گالری تصاویر</h3>
-                        <div class="gallery-grid">
-                            <img src="https://placehold.co/400x300/63b3ed/ffffff?text=Photo+1" alt="Gallery Image 1">
-                            <img src="https://placehold.co/400x300/f6ad55/ffffff?text=Photo+2" alt="Gallery Image 2">
-                            <img src="https://placehold.co/400x300/2b6cb0/ffffff?text=Photo+3" alt="Gallery Image 3">
-                            <img src="https://placehold.co/400x300/718096/ffffff?text=Photo+4" alt="Gallery Image 4">
-                        </div>
+                <div class="filter-bar">
+                    <button class="filter-btn active">مرتبط‌ترین</button>
+                    <button class="filter-btn">محبوب‌ترین</button>
+                    <button class="filter-btn">نزدیک‌ترین</button>
+                </div>
 
-                        <h3>نظرات کاربران (۲ نظر)</h3>
-                        <div class="reviews">
-                            <div class="review-item">
-                                <div class="review-header">
-                                    <strong>متین محمدی</strong>
-                                    <div class="stars">★★★★☆</div>
-                                </div>
-                                <p>فضای بسیار دنج و قهوه عالی. حتما پیشنهاد میشه.</p>
+                <div class="ad-list">
+                    <a href="#" class="ad-card">
+                        <img src="https://placehold.co/400x250/2B6CB0/ffffff?text=Restaurant+1" alt="رستوران اول">
+                        <div class="ad-card-content">
+                            <h3>رستوران ایتالیایی روما</h3>
+                            <span class="category-tag">رستوران</span>
+                            <div class="rating">
+                                <div class="stars">★★★★☆</div>
+                                <span>(۱۲ نظر)</span>
                             </div>
-                            <div class="review-item">
-                                <div class="review-header">
-                                    <strong>کاربر دیگر</strong>
-                                    <div class="stars">★★★★★</div>
-                                </div>
-                                <p>بهترین کافه منطقه! برخورد پرسنل هم عالی بود.</p>
+                            <p class="address"><i class="fa fa-map-marker-alt"></i> تهران، خیابان اصلی، پلاک ۱۰</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="ad-card">
+                        <img src="https://placehold.co/400x250/F6AD55/ffffff?text=Restaurant+2" alt="رستوران دوم">
+                        <div class="ad-card-content">
+                            <h3>کافه هنر</h3>
+                            <span class="category-tag">کافه</span>
+                            <div class="rating">
+                                <div class="stars">★★★★★</div>
+                                <span>(۳ نظر)</span>
                             </div>
+                            <p class="address"><i class="fa fa-map-marker-alt"></i> تهران، خیابان هنر، پلاک ۱۲۳</p>
                         </div>
-                    </div>
-                    <aside class="ad-sidebar">
-                        <div class="map-placeholder">
-                           <img src="https://placehold.co/400x350/e2e8f0/2d3748?text=Map+Goes+Here" alt="Map Placeholder">
+                    </a>
+
+                    <a href="#" class="ad-card">
+                        <img src="https://placehold.co/400x250/2D3748/ffffff?text=Restaurant+3" alt="رستوران سوم">
+                        <div class="ad-card-content">
+                            <h3>سفره‌خانه سنتی ترمه</h3>
+                            <span class="category-tag">رستوران سنتی</span>
+                            <div class="rating">
+                                <div class="stars">★★★★☆</div>
+                                <span>(۲۵ نظر)</span>
+                            </div>
+                            <p class="address"><i class="fa fa-map-marker-alt"></i> تهران، میدان بازار، کوچه ترمه</p>
                         </div>
-                        <a href="#" class="nav-button" style="width: 100%; text-align: center; margin-top: 20px;">افزودن نظر</a>
-                    </aside>
+                    </a>
+                </div>
+
+                <div class="pagination">
+                    <a href="#" class="page-link disabled">قبلی</a>
+                    <a href="#" class="page-link active">۱</a>
+                    <a href="#" class="page-link">۲</a>
+                    <a href="#" class="page-link">۳</a>
+                    <a href="#" class="page-link">بعدی</a>
                 </div>
             </div>
         </section>
