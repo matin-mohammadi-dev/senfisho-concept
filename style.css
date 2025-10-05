@@ -1,0 +1,245 @@
+/* --- Google Font (Vazirmatn) --- */
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+
+/* --- General Styles & Variables --- */
+:root {
+    --primary-blue: #2B6CB0;
+    --action-orange: #F6AD55;
+    --dark-text: #2D3748;
+    --light-gray: #E2E8F0;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    background-color: var(--white);
+    color: var(--dark-text);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+h1, h2 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+/* --- Header --- */
+.main-header {
+    background-color: var(--primary-blue);
+    padding: 15px 0;
+    color: var(--white);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-link {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 16px;
+    transition: opacity 0.2s ease;
+}
+.nav-link:hover {
+    opacity: 0.8;
+}
+
+.nav-button {
+    background-color: var(--action-orange);
+    color: var(--white);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #dd6b20; /* Darker orange */
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    background-color: var(--primary-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-box {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 15px;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.search-field {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--light-gray);
+    border-radius: 8px;
+    padding: 12px;
+    background: #f7fafc;
+}
+
+.search-field input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Vazirmatn', sans-serif;
+    background: none;
+    text-align: right;
+}
+
+.search-button {
+    background-color: var(--action-orange);
+    color: var(--white);
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Vazirmatn', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #dd6b20;
+}
+
+/* --- Categories Section --- */
+.categories-section {
+    background-color: #f7fafc;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.category-item {
+    background: var(--white);
+    padding: 25px 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.category-item i {
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+}
+
+.category-item span {
+    display: block;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* --- Business CTA Section --- */
+.business-cta {
+    background-color: var(--dark-text);
+    color: var(--white);
+    text-align: center;
+}
+
+.business-cta .nav-button {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+/* --- Footer --- */
+.main-footer {
+    background-color: #E2E8F0;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 14px;
+    color: #718096;
+}
+
+/* --- Responsive for Desktop --- */
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+    
+    .search-box {
+        flex-direction: row;
+    }
+
+    .search-field {
+        flex-grow: 1;
+    }
+    
+    .search-button {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
