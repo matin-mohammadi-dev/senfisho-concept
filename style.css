@@ -106,3 +106,33 @@ h1, h2, h3 {
     .ad-list { grid-template-columns: repeat(3, 1fr); }
 }
 
+/* --- Hamburger Menu --- */
+.hamburger-menu {
+    display: none; /* Hidden on desktop */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.hamburger-menu span {
+    width: 2rem;
+    height: 0.25rem;
+    background: var(--white);
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+
+/* --- Responsive for Mobile Menu --- */
+@media (max-width: 768px) {
+    .main-nav {
+        display: none; /* Hide standard nav on mobile */
+    }
+    .hamburger-menu {
+        display: flex; /* Show hamburger on mobile */
+    }
+}
